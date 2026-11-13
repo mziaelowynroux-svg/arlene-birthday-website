@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4eee7">
+  <meta name="description" content="A little celebration made with love, for Arlene — November 5, 2026.">
+  <title>For Arlene — A Birthday Celebration</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="wordmark" href="#home">A <span>little</span> celebration</a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#greeting">Greeting</a>
+      <a href="#moments">Moments</a>
+      <a href="#letter">A letter</a>
+    </nav>
+    <button class="music-toggle" id="musicToggle" type="button" aria-label="Play background music">
+      <span class="music-icon">♫</span><span id="musicLabel">Play music</span>
+    </button>
+    <audio id="birthdayMusic" loop preload="none">
+      <!-- Add your own licensed jazz MP3 at assets/jazz.mp3 -->
+      <source src="HBD.mp3" type="audio/mpeg">
+    </audio>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-side-note">A DAY TO REMEMBER · 2026</div>
+      <div class="hero-card">
+        <div class="hero-topline"><span>WITH LOVE, ALWAYS</span><span>05 / 11 / 26</span></div>
+        <div class="hero-art">
+          <span class="orbit orbit-one"></span><span class="orbit orbit-two"></span>
+          <span class="tiny-star star-one">✳</span><span class="tiny-star star-two">✧</span>
+          <span class="hero-script">a celebration of</span>
+          <h1>Arlene<span class="name-period">.</span></h1>
+          <p class="hero-subtitle">A beautiful day for a beautiful soul.</p>
+          <a class="primary-button" href="#greeting">Enter the celebration <span>↗</span></a>
+        </div>
+        <div class="hero-bottomline"><span>THURSDAY, NOVEMBER 5</span><span>MADE ESPECIALLY FOR YOU</span></div>
+      </div>
+      <p class="hero-caption">A little page, filled with a lot of love.</p>
+      <a class="scroll-cue" href="#greeting" aria-label="Scroll to greeting"><span></span>SCROLL TO DISCOVER</a>
+    </section>
+
+    <section class="intro section-pad" id="greeting">
+      <div class="section-kicker"><span>01</span> THE DAY IS YOURS</div>
+      <div class="intro-layout">
+        <div class="intro-heading">
+          <p class="eyebrow">November 5, 2026</p>
+          <h2>Today, the world<br>celebrates <em>you.</em></h2>
+        </div>
+        <div class="intro-copy">
+          <span class="decorative-flower">✳</span>
+          <p>Some days deserve more than an ordinary greeting. They deserve a little page of their own — something thoughtful, something beautiful, and something that reminds you how much you are appreciated.</p>
+          <p>So, Arlene, this little corner of the internet is all yours. May today bring you the same warmth and happiness you bring to the people around you.</p>
+          <span class="signature">With warmest wishes ♡</span>
+        </div>
+      </div>
+      <div class="thin-rule"></div>
+      <div class="quote-strip"><span>“</span><p>May this next chapter be filled with moments worth keeping.</p><span>”</span></div>
+    </section>
+
+    <section class="moments section-pad" id="moments">
+      <div class="section-kicker"><span>02</span> LITTLE MOMENTS, LOVELY MEMORIES</div>
+      <div class="section-title-row">
+        <div><p class="eyebrow">The scrapbook</p><h2>Collected <em>moments.</em></h2></div>
+        <p class="section-aside">A few spaces for the photographs<br>that tell your story.</p>
+      </div>
+      <div class="scrapbook-grid">
+        <figure class="photo-card photo-tall">
+          <div class="photo-frame"><img src="mother.jpg" alt="Friends sharing a happy moment"></div>
+          <figcaption><span>01 / THE GOOD DAYS</span><b>Moments to keep</b></figcaption>
+          <span class="tape tape-top"></span>
+        </figure>
+        <figure class="photo-card photo-wide">
+          <div class="photo-frame"><img src="together.jpg" alt="Soft pastel flowers"></div>
+          <figcaption><span>02 / IN FULL BLOOM</span><b>Wishing you lovely things</b></figcaption>
+          <span class="paper-clip">⌁</span>
+        </figure>
+        <figure class="photo-card photo-small">
+          <div class="photo-frame"><img src="memories.jpg" alt="A delicate pink flower"></div>
+          <figcaption><span>03 / JUST BECAUSE</span><b>Simply special</b></figcaption>
+        </figure>
+        <figure class="photo-card photo-note">
+          <span class="note-star">✧</span>
+          <p>Here's to more<br><em>beautiful beginnings.</em></p>
+          <span class="note-small">A NOTE FOR YOU · 2026</span>
+        </figure>
+      </div>
+      <p class="photo-tip">Your memories belong here.</p>
+    </section>
+
+    <section class="letter-section section-pad" id="letter">
+      <div class="section-kicker"><span>03</span> A NOTE FROM THE HEART</div>
+      <div class="letter-wrap">
+        <div class="letter-side">
+          <p class="eyebrow">A birthday letter</p>
+          <h2>Words just<br>for <em>you.</em></h2>
+          <p class="letter-intro">Some wishes are best delivered slowly, like a handwritten note saved between the pages of a favorite book.</p>
+          <span class="letter-flower">✳</span>
+        </div>
+        <button class="envelope" id="openLetter" type="button" aria-expanded="false" aria-controls="letterPaper">
+          <span class="envelope-label">OPEN YOUR LETTER</span>
+          <span class="envelope-flap"></span>
+          <span class="envelope-seal">A</span>
+          <span class="envelope-hint">A little something for you ↗</span>
+        </button>
+      </div>
+      <article class="letter-paper" id="letterPaper" hidden>
+        <button class="close-letter" id="closeLetter" type="button" aria-label="Close letter">×</button>
+        <p class="letter-date">NOVEMBER 5, 2026</p>
+        <h3>Dear Arlene,</h3>
+        <p>Happy birthday! Today is a lovely reminder of how much joy one person can bring simply by being themselves. I hope you take a moment to appreciate all that you are, all that you have overcome, and all the wonderful things still waiting for you.</p>
+        <p>May the year ahead be gentle when life gets busy, exciting when new doors open, and generous with reasons to smile. May you find beauty in ordinary days, courage in every new beginning, and people who make you feel valued and understood.</p>
+        <p>Thank you for being someone worth celebrating. I hope today surrounds you with warmth, sincere laughter, thoughtful surprises, and the kind of happiness that stays long after the candles are gone.</p>
+        <p class="letter-closing">With love and the warmest birthday wishes,</p>
+        <p class="letter-signature">Raqueño Family ♡</p>
+      </article>
+    </section>
+
+    <section class="finale">
+      <div class="finale-inner">
+        <span class="finale-flower">✳</span>
+        <p class="eyebrow">AND THE WISHES DON'T END HERE</p>
+        <h2>Here's to <em>you,</em><br>Arlene.</h2>
+        <p>May your days be full, your heart be light,<br>and your next chapter be your loveliest yet.</p>
+        <a href="#home" class="back-top">BACK TO THE BEGINNING ↑</a>
+        <span class="final-date">NOVEMBER 5 · 2026</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><span>MADE WITH CARE</span><span>FOR ARLENE · 2026</span><span>♡</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
